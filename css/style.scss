@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600);
+
+$desaturated-red: hsl(0, 36%, 70%);
+$soft-red: hsl(0, 93%, 68%);
+$dark-grayish-red: hsl(0, 6%, 24%);
+
+$gradienta: hsl(0, 0%, 100%);
+$gradientb: hsl(0, 100%, 98%);
+
+$gradientc: hsl(0, 80%, 86%);
+$gradientd: hsl(0, 74%, 74%);
+
+
+
+$font-stack: Josefin Sans, sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background: linear-gradient(135deg, $gradienta, $gradientb);
+    min-height: 100vh;
+    font-family: $font-stack;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 90px;
+}
+.img__logo{
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 100px;
+}
+.info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.main__tittle{
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+.other_tittlest{
+    color: $desaturated-red;
+    font-weight: 200;
+}
+.button__container{
+    position: relative;
+    margin-top: 35px;
+    width: 80%;
+    
+}
+.email__container{    
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid $desaturated-red;
+}
+.email{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    outline: none;
+    border: 0;
+    font-weight: 200;
+}
+::placeholder{
+    opacity: 0.5;
+    color: $desaturated-red;
+}
+#icon__error{
+    position: absolute;
+    bottom: 0;
+    right: 22%;
+    height: 75%;
+    display: none;
+}
+.arrow__button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    bottom: 0;
+    width: 65px;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(135deg, $gradientc, $gradientd);
+}
+.arrow__button:hover{
+    box-shadow: 0px 4px 6px #999;
+    opacity: 0.6;
+}
+.main__info{
+    padding-top: 20px;
+    width: 80%;
+    color: $desaturated-red;
+    line-height: 20px;
+    font-size: 14px;
+}
+#message__alert{
+    display: none;
+    width: 70%;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: $soft-red;
+}
+
+
+.attribution {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 901px){
+    .container{       
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .img__logo{
+        top: 80px;
+        left: 175px;
+        width: 150px;
+    }
+
+    
+    
+    .info{
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 175px;
+    }
+    .main__tittle{
+        font-size: 4.4rem;
+        letter-spacing: 15px;
+    }
+    .main__info{
+        padding-top: 25px;
+        width: 65%;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .button__container{
+        margin-top: 40px;
+        width: 65%;        
+    }
+    #icon__error{
+        right: 25%;    
+    }
+    .arrow__button{
+        width: 90px;
+    }
+    .arrow__button:hover{
+        box-shadow: 0px 12px 16px #999;
+    }    
+    #message__alert{
+        display: none;
+        margin-left: 16px;
+    }
+    .attribution {
+        left: 30%;        
+    }
+}
+
+
+@media (min-width: 1600px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{       
+        position: relative;
+        flex-direction: row;
+        margin-top: 0;
+        width: 80%;
+    }
+    .img__logo{
+        top: 80px;
+        left: 175px;
+        width: 150px;
+    }
+    
+
+    
+    
+    .info{
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 175px;
+    }
+    .main__tittle{
+        font-size: 4.4rem;
+        letter-spacing: 15px;
+    }
+    .main__info{
+        padding-top: 25px;
+        width: 65%;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .button__container{
+        margin-top: 40px;
+        width: 65%;        
+    }
+    #icon__error{
+        right: 25%;    
+    }
+    .arrow__button{
+        width: 90px;
+    }
+    .arrow__button:hover{
+        box-shadow: 0px 12px 16px #999;
+    }    
+    #message__alert{
+        display: none;
+        margin-left: 16px;
+    }
+    .attribution {
+        left: 30%;        
+    }
+}
