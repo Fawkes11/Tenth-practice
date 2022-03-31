@@ -161,7 +161,7 @@ body {
 }
 
 .attribution {
-  position: absolute;
+  position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
